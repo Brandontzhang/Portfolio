@@ -3,6 +3,7 @@ import CSS from './CSS.svg';
 import EZMaxMobile from './EZMaxMobile.svg';
 import EZMaxPlanner from './EZMaxPlanner.svg';
 import Github from './Github.svg';
+import InterPro from './InterPro.svg';
 import HTML5 from './HTML5.svg';
 import Java from './Java.svg';
 import JavaScript from './JavaScript.svg';
@@ -19,6 +20,7 @@ export {
     EZMaxPlanner,
     Github,
     HTML5,
+    InterPro,
     Java,
     JavaScript,
     MongoDB,
