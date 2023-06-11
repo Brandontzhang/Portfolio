@@ -6,7 +6,7 @@ const Skills = () => {
     <div className='w-full min-h-fit mt-10 p-10'>
       <div className='flex flex-col justify-center items-center'>
         <div>
-            <span className='text-5xl text-slate-300'>Skills</span>
+            <span className='text-5xl text-slate-300'>Experience</span>
             <hr className='my-10'></hr>
         </div>
         <div className='flex w-3/5 m-14 justify-evenly'>
