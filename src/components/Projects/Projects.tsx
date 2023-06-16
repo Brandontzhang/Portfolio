@@ -1,8 +1,11 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className='w-full h-screen'>
+      <ProjectCard />
+    </div>
   )
 }
 
