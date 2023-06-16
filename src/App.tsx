@@ -3,7 +3,8 @@ import { Hero } from './components/Hero/index';
 import { Navbar } from './components/Navbar/index';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills/index';
-import { Work } from './components/Work/index'
+import { Work } from './components/Work/index';
+import { Contact } from './components/Contact/index';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Skills />
         <Work />
         <Projects />
+        <Contact />
       </div>
   )
 }

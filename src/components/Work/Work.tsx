@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div className="flex flex-col justify-start items-center">
-        <span className='text-5xl text-slate-300'>Experience</span>
+        <span className='text-5xl text-slate-300 p-14'>Experience</span>
         <WorkCard work={example}>
           {/* <img src={InterPro} /> */}
           {/* <img src={EZMaxMobile} /> */}

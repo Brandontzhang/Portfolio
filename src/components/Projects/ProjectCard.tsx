@@ -7,7 +7,7 @@ const ProjectCard = (props : any) => {
 
 
     return (
-        <div className=' m-16 -z-5'>
+        <div className='m-16 -z-5'>
             <div className='text-slate-300 mb-2'>{title}</div>
             <div className="bg-future bg-contain w-fit h-fit backdrop-blur-md rounded-lg">
                 <div className="h-[250px] w-[250px] rounded-lg transition ease-in-out hover:backdrop-blur-sm duration-1000" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
