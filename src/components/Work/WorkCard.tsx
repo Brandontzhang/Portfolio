@@ -6,7 +6,7 @@ const WorkCard = (props : any) => {
 
   return (
     <div className="bg-inherit w-full h-screen flex justify-center items-center">
-        <div className="w-11/12 h-5/6 mt-20 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
+        <div className="w-11/12 h-5/6 mt-14 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
           <div className="flex md:flex-row flex-col w-full h-full justify-around items-center divide-x-2">
             <div className="flex-1 h-full flex flex-col justify-evenly items-center p-5">
               {props.children}
@@ -18,7 +18,7 @@ const WorkCard = (props : any) => {
               </div>
               <ol className="list-disc list-inside">
                 {
-                  details.map((detail : string) => <li className="text-slate-300 text-xl px-10 py-5">{detail}</li>)
+                  details.map((detail : string, index : number) => <li key={index} className="text-slate-300 text-xl px-10 py-5">{detail}</li>)
                 }
               </ol>
             </div>
