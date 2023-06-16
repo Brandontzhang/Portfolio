@@ -1,6 +1,9 @@
 
 
 const WorkCard = (props : any) => {
+
+  const {startDate, endDate, position, details} = props.work;
+
   return (
     <div className="bg-inherit w-full h-screen flex justify-center items-center">
         <div className="w-11/12 h-5/6 mt-20 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
@@ -8,11 +11,16 @@ const WorkCard = (props : any) => {
             <div className="flex-1 h-full flex flex-col justify-evenly items-center p-5">
               {props.children}
             </div>
-            <div className="flex-1 flex flex-col justify-center items-center h-5/6">
-              <p className="text-slate-300 text-3xl font-bold p-4">Brandon Zhang</p>
-              <hr className="w-40 text-slate-300"/>
-              <p className="text-slate-300 text-3xl font-bold p-4">Software Engineer, Web Developer</p>
-              <p className="text-slate-300 p-4">Short section with text about me yadadadadadadadad more text this will be a short introduction, I will include more of an about me in another section</p>
+            <div className="flex-1 flex flex-col justify-start h-5/6 w-11/12">
+              <div className="flex justify-between w-full">
+                <div className="text-slate-300 italic text-3xl p-10">{position}</div>
+                <div className="text-slate-300 p-10">{startDate} - {endDate ? endDate : 'Present'}</div>
+              </div>
+              <ol className="list-disc list-inside">
+                {
+                  details.map((detail : string) => <li className="text-slate-300 text-xl px-10 py-5">{detail}</li>)
+                }
+              </ol>
             </div>
           </div>
         </div>
