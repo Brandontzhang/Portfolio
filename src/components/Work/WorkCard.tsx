@@ -5,9 +5,9 @@ const WorkCard = (props : any) => {
   const {startDate, endDate, position, details} = props.work;
 
   return (
-    <div className="bg-inherit w-full h-screen flex justify-center items-center">
-        <div className="w-11/12 h-5/6 mt-14 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
-          <div className="flex md:flex-row flex-col w-full h-full justify-around items-center divide-x-2">
+    <div className="bg-inherit w-full min-h-fit flex justify-center items-center m-10">
+        <div className="w-11/12 min-h-fit mt-14 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
+          <div className="flex lg:flex-row flex-col w-full h-full justify-around items-center divide-x-2">
             <div className="flex-1 h-full flex flex-col justify-evenly items-center p-5">
               {props.children}
             </div>

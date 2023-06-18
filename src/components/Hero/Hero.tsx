@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <div className="bg-inherit w-full h-screen flex justify-center items-center">
         <div className="w-11/12 h-5/6 mt-20 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#4A3297] to-[#091332]">
-          <div className="flex md:flex-row flex-col w-full h-full justify-around items-center">
+          <div className="flex lg:flex-row flex-col w-full h-full justify-around items-center">
             <div className="flex-1 flex flex-col justify-center items-center">
               Profile Image here
             </div>
