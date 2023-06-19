@@ -13,8 +13,8 @@ function App() {
         <Hero />
         <Skills />
         <Work />
-        {/* <Projects />
-        <Contact /> */}
+        <Projects />
+        <Contact />
       </div>
   )
 }
