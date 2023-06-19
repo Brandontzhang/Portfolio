@@ -8,7 +8,7 @@ import { Contact } from './components/Contact/index';
 
 function App() {
   return (
-      <div className='flex-col h-auto w-full bg-[#18244A]'>
+      <div className='flex-col h-auto w-auto bg-[#18244A]'>
         <Navbar />
         <Hero />
         <Skills />

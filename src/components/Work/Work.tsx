@@ -16,18 +16,18 @@ const Work = () => {
   }
 
   return (
-    <div className="flex flex-col justify-start items-center">
+    <div className="flex flex-col justify-start items-center mt-10">
         <span className='text-5xl text-slate-300'>Experience</span>
         <WorkCard work={example}>
           <img className="m-10" src={InterPro} />
           <img className="m-10" src={EZMaxMobile} />
           <img className="m-10" src={EZMaxPlanner} />
-          <div className='flex justify-evenly w-full m-10'>
-            <Bubble img={Angular} title={'Angular'} />
-            <Bubble img={TypeScript} title={'TypeScript'} />
-            <Bubble img={Java} title={'Java'} />
-            <Bubble img={Spring} title={'Spring'} />
-            <Bubble img={mySQL} title={'mySQL'} />
+          <div className='grid grid-cols-2 gap-10 sm:flex sm:justify-evenly m-10'>
+            <Bubble className='m-10' img={Angular} title={'Angular'} />
+            <Bubble className='m-10' img={TypeScript} title={'TypeScript'} />
+            <Bubble className='m-10' img={Java} title={'Java'} />
+            <Bubble className='m-10' img={Spring} title={'Spring'} />
+            <Bubble className='m-10' img={mySQL} title={'mySQL'} />
           </div>
         </WorkCard>
     </div>

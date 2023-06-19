@@ -3,7 +3,7 @@ import { Angular, HTML, CSS, JavaScript, Git, Github, Java, MongoDB, Nodejs, myS
 
 const Skills = () => {
   return (
-    <div className='w-full min-h-fit mt-10 p-10'>
+    <div className='w-full min-h-fit mt-10'>
       <div className='hidden md:flex flex-col justify-center items-center'>
         <div>
             <span className='text-5xl text-slate-300 p-14'>Skills</span>

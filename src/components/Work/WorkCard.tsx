@@ -5,16 +5,16 @@ const WorkCard = (props : any) => {
   const {startDate, endDate, position, details} = props.work;
 
   return (
-    <div className="bg-inherit w-full min-h-fit flex justify-center items-center m-10">
-        <div className="w-11/12 min-h-fit mt-14 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E]">
+    <div className="bg-inherit w-full min-h-fit flex justify-center items-center">
+        <div className="w-11/12 min-h-fit mt-14 rounded-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#091332] to-[#212E5E] m-5 p-5">
           <div className="flex lg:flex-row flex-col w-full h-full justify-around items-center divide-x-2">
-            <div className="flex-1 h-full flex flex-col justify-evenly items-center p-5">
+            <div className="flex-1 h-full flex flex-col sm:justify-evenly items-center">
               {props.children}
             </div>
-            <div className="flex-1 flex flex-col justify-start h-5/6 w-11/12">
-              <div className="flex justify-between w-full">
-                <div className="text-slate-300 italic text-3xl p-10">{position}</div>
-                <div className="text-slate-300 p-10">{startDate} - {endDate ? endDate : 'Present'}</div>
+            <div className="flex-1 flex flex-col h-full w-11/12">
+              <div className="flex justify-between w-auto">
+                <div className="text-slate-300 italic text-3xl mx-5 my-10">{position}</div>
+                <div className="text-slate-300 m-5">{startDate} - {endDate ? endDate : 'Present'}</div>
               </div>
               <ol className="list-disc list-inside">
                 {
