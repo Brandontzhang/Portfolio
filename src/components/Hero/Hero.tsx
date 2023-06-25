@@ -1,3 +1,4 @@
+import { Link } from "react-scroll"
 
 const Hero = () => {
   return (
@@ -13,8 +14,8 @@ const Hero = () => {
               <p className="text-slate-300 text-3xl font-bold p-4">Software Engineer, Web Developer</p>
               <p className="text-slate-300 p-4">Short section with text about me yadadadadadadadad more text this will be a short introduction, I will include more of an about me in another section</p>
               <div className="flex my-10 w-full justify-evenly items-center">
-                <button className="p-3 text-[#EAB557] border border-[#EAB557] rounded-lg">View Work</button>
-                <button className="p-3 text-[#EAB557] border border-[#EAB557] rounded-lg">Contact</button>
+                <button className="p-3 text-[#EAB557] border border-[#EAB557] rounded-lg"><Link to="Projects" smooth={true}>View Work</Link></button>
+                <button className="p-3 text-[#EAB557] border border-[#EAB557] rounded-lg"><Link to="Contact" smooth={true}>Contact</Link></button>
               </div>
             </div>
           </div>

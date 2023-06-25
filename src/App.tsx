@@ -6,7 +6,7 @@ import { Skills } from './components/Skills/index';
 import { Work } from './components/Work/index';
 import { Contact } from './components/Contact/index';
 
-import { Element, Link } from 'react-scroll';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
