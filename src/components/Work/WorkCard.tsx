@@ -11,16 +11,16 @@ const WorkCard = (props : any) => {
             <div className="flex-1 h-full flex flex-col sm:justify-evenly items-center">
               {props.children}
             </div>
-            <div className="flex-1 flex flex-col h-full w-11/12">
+            <div className="flex-1 flex justify-around flex-col h-full min-h-[500px] w-11/12">
               <div className="flex justify-between w-auto">
                 <div className="text-slate-300 italic text-3xl mx-5 my-10">{position}</div>
                 <div className="text-slate-300 m-5">{startDate} - {endDate ? endDate : 'Present'}</div>
               </div>
-              <ol className="list-disc list-inside">
+              <ul className="list-disc list-inside">
                 {
                   details.map((detail : string, index : number) => <li key={index} className="text-slate-300 text-xl px-10 py-5">{detail}</li>)
                 }
-              </ol>
+              </ul>
             </div>
           </div>
         </div>

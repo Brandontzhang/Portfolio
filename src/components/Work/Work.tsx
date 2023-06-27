@@ -38,7 +38,7 @@ const Work = () => {
         "Refactored and improved the organization of the mobile automation framework using page objects.",
         "Created and organized JIRA test tickets using a Kanban board."
       ],
-      images : [<img className="object-scale-down h-40" src={Amwell}/>],
+      images : [<img className="object-scale-down h-40 md:mb-40 md:mt-10" src={Amwell}/>],
       skills : [{img : JavaScript, name: "JavaScript"}, {img : Java, name: "Java"}, {img : Nodejs, name: "Nodejs"}]
     },
     {
@@ -51,7 +51,7 @@ const Work = () => {
         "Organized and processed company project data using the Python Pandas library.",
         "Updated and reorganized old test scripts using Object Oriented Design."
       ],
-      images : [<img className="object-scale-down h-40 w-11/12" src={Draper}/>],
+      images : [<img className="object-scale-down h-40 w-11/12 md:mb-40 md:mt-10" src={Draper}/>],
       skills : [{img : JavaScript, name: "JavaScript"}, {img : Java, name: "Java"}, {img : Nodejs, name: "Nodejs"}, {img : Python, name : "Python"}, {img : React, name : "React"}]
     }
   ]
